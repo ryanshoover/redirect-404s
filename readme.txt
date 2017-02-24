@@ -18,8 +18,9 @@ No configuration. No one-by-one setting of the new link structures. No wrestling
 * Note - the plugin only works for permalink structures where the last "chunk" of the URL is the post name (also called the slug).
 
 == Installation ==
-1. Upload the `wpengine-redirect-404s`  folder to your /wp-content/plugins/ directory
+1. Upload the plugin folder to your /wp-content/plugins/ directory
 2. Activate the plugin through the Plugins menu
+3. Done!
 
 == Frequently Asked Questions ==
 = How do I configure the plugin? =
