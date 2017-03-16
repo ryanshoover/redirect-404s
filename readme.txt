@@ -1,12 +1,12 @@
-=== Redirect 404s ===
-Contributors: ryanshoover, wpengine
+=== Redirect Old Links ===
+Contributors: ryanshoover
 Tags: SEO, permalinks, 404, redirect
 Requires at least: 3.0
 Tested up to: 4.7.2
-Stable tag: trunk
+Stable tag: 1.0.0
 License: GPL3
 
-Did you change your permalink structure and now have old links "404ing"? I'll automatically redirect those old links to their new one for you.
+Did you change your permalink structure and now have old links "404ing"? I'll redirect those old links to their new one for you.
 
 == Description ==
 Changing your link structure in WordPress can lead to all of your old links breaking and returning a "404". But no more! If someone goes to an old link for your site, I'll find the new link and redirect them there automatically.
@@ -40,6 +40,7 @@ Examples:
 Sure do! I'll search all public post types for the post name to see if I find one.
 
 == Changelog ==
+* 1.0.0 Initial release to wordpress.org repository
 * 0.2 Update the query to search for all post names, instead of just matching off of `get_page_by_path()`
 * 0.1 Initial release
 
