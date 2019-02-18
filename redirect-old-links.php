@@ -8,6 +8,8 @@
  * Version:         1.0.0
  * License:         GPL3
  * License URI:     https://www.gnu.org/licenses/gpl-3.0.en.html
+ *
+ * @package redirect-old-links
  */
 
 namespace RedirectOldLinks;
@@ -21,12 +23,12 @@ namespace RedirectOldLinks;
  */
 function maybe_redirect_404_links() {
 	// If this isn't a 404 error page, abort
-	if ( 404 != get_query_var( 'error' ) ) {
+	if ( 404 !== get_query_var( 'error' ) ) {
 		return;
 	}
 
 	// Get the request path's parts
-	$request_uri = ! empty( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '';
+	$request_uri   = ! empty( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '';
 	$request_parts = explode( '/', $request_uri );
 	$request_parts = array_filter( $request_parts );
 
@@ -38,11 +40,13 @@ function maybe_redirect_404_links() {
 	// Find the post that has the matching slug
 	$post_name = array_pop( $request_parts );
 
-	$posts = get_posts( array(
-		'name'           => $post_name,
-		'post_type'      => 'any',
-		'posts_per_page' => 1,
-		) );
+	$posts = get_posts(
+		array(
+			'name'           => $post_name,
+			'post_type'      => 'any',
+			'posts_per_page' => 1,
+		)
+	);
 
 	// If we didn't find a post, abort
 	if ( empty( $posts ) ) {
@@ -56,4 +60,4 @@ function maybe_redirect_404_links() {
 	exit;
 }
 
-add_action( 'template_redirect', 'RedirectOldLinks\maybe_redirect_404_links' );
+add_action( 'template_redirect', __NAMESPACE__ . '\maybe_redirect_404_links' );
