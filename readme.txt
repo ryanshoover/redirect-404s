@@ -2,9 +2,9 @@
 Contributors: ryanshoover
 Tags: SEO, permalinks, 404, redirect
 Requires at least: 3.0
-Tested up to: 4.7.2
-Stable tag: 1.0.0
+Tested up to: 5.1
 License: GPL3
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Did you change your permalink structure and now have old links "404ing"? I'll redirect those old links to their new one for you.
 

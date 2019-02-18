@@ -5,7 +5,7 @@
  * Plugin URI:      https://github.com/ryanshoover/redirect-old-links
  * Author:          Ryan Hoover
  * Author URI:      https://github.com/ryanshoover
- * Version:         1.0.0
+ * Version:         1.0.1
  * License:         GPL3
  * License URI:     https://www.gnu.org/licenses/gpl-3.0.en.html
  *
